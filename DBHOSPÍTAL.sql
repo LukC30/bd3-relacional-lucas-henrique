@@ -18,6 +18,18 @@ telefone_responsavel char(11) not null,
 constraint primary key (id_paciente)
 
 );
+CREATE TABLE TBL_PACIENTE_bkp(
+id_paciente int unsigned auto_increment, 
+nome_paciente varchar(50) not null,
+telefone_paciente char(10) null,
+celular_paciente char(11) not null,
+email_paciente varchar(30) not null,
+nome_responsavel varchar(50) not null,
+telefone_responsavel char(11) not null,
+constraint primary key (id_paciente),
+date_delete datetime default now()
+);
+
 
 CREATE TABLE TBL_MEDICO(
 ID INT UNSIGNED AUTO_INCREMENT,

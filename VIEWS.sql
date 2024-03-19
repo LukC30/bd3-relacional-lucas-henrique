@@ -22,8 +22,8 @@ on a.id_especialidade = b.id;
 create view agenda_completa as
 SELECT 
 a.data_cirurgia, a.status_cirurgia,
-b.num_sala as sala
-, c.nome as nome_medico, c.celular as celular_medico,
+b.num_sala as sala,
+c.nome as nome_medico, c.celular as celular_medico,
 d.nome_paciente,d.celular_paciente, d.nome_responsavel, d.telefone_responsavel
 from tbl_agenda a
 inner join tbl_sala b
